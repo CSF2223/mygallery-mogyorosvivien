@@ -1,15 +1,15 @@
 /*
 Color Palette: 
-background color: #999B84
-font color: #F4EEED 
-secondary color: #EFD9D1
-tertiary color: #D8AC9C 
+background color: #DD5353
+font color: #FFF8EA 
+secondary color: #DBC8AC
+tertiary color: #EDDBC0 
 */
 
 /* CSS syntax notes:
         selector {property: value;}
 */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 
 html {
@@ -31,9 +31,9 @@ header{
 }
 
 body {
-    background-color:#999B84;
-    color: #F4EEED;
-    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg, #002B5B, #3F0713);
+    color: #FFF8EA;
+    font-family: 'Silkscreen', cursive;
     margin: 0;
 }
 
@@ -56,22 +56,24 @@ p {
 .imageCard img {
     width: 100%;
     height: auto;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 100px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 .imageCard a{
     text-decoration: none;
-    color: #D8AC9C;
+    color: #EDDBC0;
 }
 
 .cardText {
-    color: #EFD9D1;
+    color: #DBC8AC;
     text-align: center;
     padding: 2rem;
     border-radius: 30px;
     margin-top: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 @media (min-width: 768px) {
@@ -84,6 +86,11 @@ p {
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+    .gallery img:hover {
+        box-shadow: 0 0 30px 20px rgba(0, 140, 186, 0.5);
+        filter: contrast(150%) brightness(100%) grayscale(100%);
+        transition:.5s ease;
     }
     
     .imageCard {
